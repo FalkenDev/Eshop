@@ -1,0 +1,13 @@
+body{
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
+.index {
+    width: 1200px;
+    margin: auto;
+}

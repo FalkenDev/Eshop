@@ -1,0 +1,17 @@
+<%- include("esentials/header.ejs");%>
+<section class="index">
+    <img src="/public/images/welcome.jpg">
+    <div class="home-nav">
+        <% for (const row of res) { %>
+            <a href= "">
+                <div class="categoryDiv">
+                    <p><%- row.namn %></p>
+                </div>
+            </a>
+        <% }; %>
+    </div>
+    <p class="p-update">Eshop senast uppdaterad <time datetime="2022-02-23 00:00:00">Den 21 mars 2022</time></p>
+</section>
+
+
+<%- include("esentials/footer.ejs"); %>

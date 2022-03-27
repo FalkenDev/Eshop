@@ -1,0 +1,14 @@
+.category {
+    width: 1600px;
+    margin: auto;
+    height: 700px;
+}
+
+.categoriesContainer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.categoryDiv {
+    width: 200px;
+}

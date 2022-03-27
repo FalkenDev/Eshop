@@ -1,0 +1,41 @@
+<%- include("esentials/header.ejs"); %>
+<section class="products">
+    <h1>StorMax Produkter</h1>
+    <div class="productsContainer">
+        <% for (const row of res) { %>
+            <div class="productDiv">
+                <div class="product-image">
+                    <img src="/public/<%- row.bild_url %>" alt="<%- row.namn %>" width="250" height="250">
+                </div>
+                <div class="product-table">
+                    <div class="produkt-title">
+                        <p class="p-produktid">ID: <%- row.produktID %></p>
+                        <p class="p-produktnamn"><%- row.namn %></h2>
+                        <p class="p-kategori">Kategori: <%- row.k_namn %></p>
+                        <p class="p-antal">Antal: <%- row.antal %></p>
+                    </div>
+                    <div class="product-price">
+                        <p><%- row.pris %>kr</p>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <p><%- row.beskrivning %></p>
+                </div>
+                <div class="product-crud">
+                    <a href="/eshop/product/edit/<%= row.produktID %>">
+                        <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                    </a>
+                    <a href="/eshop/product/delete/<%= row.produktID %>">
+                        <i class="fa fa-trash-o" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        <% }; %>
+    </div>
+    <a href="/eshop/product/create">
+        <div class="addProduct">
+            <h1>Lägg till produkt</h1>
+        </div>
+    </a>
+</section>
+<%- include("esentials/footer.ejs"); %>

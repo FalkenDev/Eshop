@@ -1,0 +1,33 @@
+<%- include("esentials/header.ejs"); %>
+<section class="products">
+    <table class="order-product-table">
+        <thead class="order-product-title">
+            <tr>
+                <th>Produkt ID</th>
+                <th>Produkt Namn</th>
+                <th>Pris</th>
+                <th>Lagerstatus</th>
+                <th>Lägg till i varukorgen</th>
+                <th></th>
+            </tr>
+        </thead>
+        <% for (const row of res) { %>
+        <tbody class="order-product-info">
+            <tr>
+                <form method="post">
+                    <td><input class="input_remove" name="produktID" value="<%- row.produktID %>" readonly></td>
+                    <td><input class="input_remove" name="namn" value="<%- row.namn %>" readonly></td>
+                    <td><input class="input_remove" name="pris" value="<%- row.pris %>" readonly></td>
+                    <td><input class="input_remove" name="lagerstatus" value="<%- row.antal %>" readonly></td>
+                    <td>
+                        <label for="antal">Antal</label>
+                        <input id="antal" type="number" name="antal" min = "1" max="<%- row.antal %>">
+                    </td>
+                    <td><input type="submit" value="Lägg till"></td>
+                </form>
+            </tr>
+        </tbody>
+        <% } %>
+      </table>
+</section>
+<%- include("esentials/footer.ejs"); %>

@@ -1,0 +1,63 @@
+<%- include("esentials/header.ejs"); %>
+<section class="p-section-form">
+    <form class="p_form" method="post">
+        <fieldset>
+            <legend>Create A Product</legend>
+
+            <label for="namn">Namn</label>
+            <input id="namn" type="text" name="namn">
+
+            <label for="price">Pris</label>
+            <input id="pris" type="number" name="pris" min = "0" required> 
+
+            <label for="antal">Antal</label>
+            <input id="antal" type="number" name="antal" min = "0">
+
+            <label for="bild_url">Produktbild</label>
+            <input id="bild_url" type="text" name="bild_url" value="images/auto.jpeg">
+
+            <label for="beskrivning">Beskrivning</label>
+            <input id="beskrivning" type="text" name="beskrivning"  maxlength="200"></input> <br>
+
+            <h3>Välj kategorier</h3>
+            <p>Du behöver välja minst en kategori och välja upp till 3 olika kategorier för produkten</p>
+            <div class="kategorier">
+                <div class="div-kategori">
+                    <label for="kategori1">Kategori1</label>
+                    <select name="kategori1" id="kategori1" required>
+                        <option value="">Välj</option>
+                        <% for (const row of res) { %>
+                        <option value="<%- row.namn %>"><%- row.namn %></option>
+                        <% }; %>
+                    </select>
+                </div>
+                <div class="div-kategori">
+                    <label for="kategori2">Kategori 2</label>
+                    <select name="kategori2" id="kategori2">
+                        <option value="inget">Välj</option>
+                        <% for (const row of res) { %>
+                        <option value="<%- row.namn %>"><%- row.namn %></option>
+                        <% }; %>
+                    </select>
+                </div>
+                <div class="div-kategori">
+                    <label for="kategori3">Kategori1</label>
+                    <select name="kategori3" id="kategori3">
+                        <option value="inget">Välj</option>
+                        <% for (const row of res) { %>
+                        <option value="<%- row.namn %>"><%- row.namn %></option>
+                        <% }; %>
+                    </select>
+                </div>
+            </div>
+
+            <label for="hylla">Hylla</label>
+            <input id="hylla" type="text" name="hylla"  maxlength="60"></input> <br>
+            
+            <input type="submit" value="Skapa">
+        </fieldset>
+    </form>
+</section>
+
+
+<%- include("esentials/footer.ejs"); %>

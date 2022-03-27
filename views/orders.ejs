@@ -1,0 +1,35 @@
+<%- include("esentials/header.ejs");%>
+<section class="orders">
+    <table class="orders-table">
+        <thead class="orders-title">
+            <tr>
+                <th>Order-ID</th>
+                <th>Kund-ID</th>
+                <th>Namn</th>
+                <th>Order datum</th>
+                <th>Antal produkter</th>
+                <th>Status</th>
+                <th></th>
+            </tr>
+        </thead>
+        <% for (const row of res) { %>
+        <tbody class="orders-info">
+            <tr>
+                <td><%- row.orderID %></td>
+                <td><%- row.kundID %></td>
+                <td><%- row.k_namn %></td>
+                <td><%- row.datum %></td>
+                <td><%- row.antal_produkter %>st</td>
+                <td><%- row.order_status %></td>
+                <td><a href="/eshop/order/show/<%- row.orderID %>" class="orders-show">Order</a></td>
+            </tr>
+        </tbody>
+        <% } %>
+      </table>
+      <a href="/eshop/customer" class="show-customers">
+        <div class="showCustomers">
+            <h2>Kunder</h2>
+        </div>
+      </a>
+</section>
+<%- include("esentials/footer.ejs"); %>

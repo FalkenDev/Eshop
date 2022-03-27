@@ -1,0 +1,37 @@
+<%- include("esentials/header.ejs");%>
+<section class="orders">
+    <table class="orders-table">
+        <thead class="orders-title">
+            <tr>
+                <th>Order-ID</th>
+                <th>Produkt-ID</th>
+                <th>Namn</th>
+                <th>Antal</th>
+                <th>Pris</th>
+            </tr>
+        </thead>
+        <% for (const row of res) { %>
+        <tbody class="orders-info">
+            <tr>
+                <td><%- row.orderID %></td>
+                <td><%- row.produktID %></td>
+                <td><%- row.namn %></td>
+                <td><%- row.antal %>st</td>
+                <td><%- row.pris %>kr</td>
+            </tr>
+        </tbody>
+        <% } %>
+    </table>
+        <a href="/eshop/order/send/<%- id %>" class="show-customers">
+            <div class="orderButton">
+                <h2>Beställ</h2>
+            </div>
+        </a>
+        <a href="/eshop/order/create/<%- id %>" class="show-customers">
+            <div class="addButton">
+                <h2>Lägg till produkt</h2>
+            </div>
+        </a>
+      </div>
+</section>
+<%- include("esentials/footer.ejs"); %>

@@ -1,0 +1,96 @@
+.customers,
+.orders {
+    height: 700px;
+}
+.customer-table,
+.orders-table,
+.order-product-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 1600px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.customer-table thead tr,
+.orders-table thead tr,
+.order-product-table thead tr {
+    background-color: red;
+    color: #ffffff;
+    text-align: left;
+}
+
+.customer-table th,
+.customer-table td, 
+.orders-table th,
+.orders-table td,
+.order-product-table th,
+.order-product-table td {
+    padding: 12px 15px;
+}
+
+.customer-table tbody tr,
+.orders-table tbody tr,
+.order-product-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.customer-table tbody tr:nth-of-type(even),
+.orders-table tbody tr:nth-of-type(even),
+.order-product-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.customer-table tbody tr:last-of-type,
+.orders-table tbody tr:last-of-type,
+.order-product-table tbody tr:last-of-type {
+    border-bottom: 2px solid red;
+}
+
+.customer-table tbody tr.active-row,
+.orders-table tbody tr.active-row,
+.order-product-table tbody tr.active-row {
+    font-weight: bold;
+    color: red;
+}
+
+.customer-create-order,
+.orders-show,
+.order-product-show {
+    width: 100px;
+    height: 25px;
+    background: #009879;
+    padding: 5px;
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+}
+
+.showCustomers {
+    margin: auto !important;
+    height: 50px !important;
+    width: 200px !important;
+    background: #009879 !important;
+    border-radius: 5px !important;
+    color: black !important;
+    font-weight: bold !important;
+    text-align: center;
+}
+
+.showCustomers h2{
+    margin: 0px;
+    padding-top: 10px;
+}
+
+.input_remove {
+    border: 0px;
+}
+
+.input_remove:focus {
+    outline: 0px;
+}
+

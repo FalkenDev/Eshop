@@ -1,0 +1,28 @@
+<%- include("esentials/header.ejs"); %>
+<%- res = res[0]%>
+<section class="p-section-form">
+    <form class="p_form" method="post">
+        <fieldset>
+            <legend>Edit account</legend>
+
+            <label for="produktID">produktID</label>
+            <input id="produktID" type="text" name="id" readonly value="<%= res.produktID %>">
+
+            <label for="namn">Namn</label>
+            <input id="namn" type="text" name="namn" readonly value="<%= res.namn %>">
+
+            <label for="beskrivning">Beskrivning</label>
+            <input id="beskrivning" type="text" name="desc" readonly value="<%= res.beskrivning %>">
+
+            <label for="bild_url">Bild_URL</label>
+            <input id="bild_url" type="text" name="url" readonly value="<%= res.bild_url %>">
+
+            <label for="pris">Pris</label>
+            <input id="pris" type="number" name="pris" readonly value="<%= res.pris %>">
+
+            <input type="submit" value="Delete">
+        </fieldset>
+    </form>
+</section>
+
+<%- include("esentials/footer.ejs"); %>

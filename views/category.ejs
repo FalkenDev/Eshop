@@ -1,0 +1,16 @@
+<%- include("esentials/header.ejs"); %>
+
+<section class="category">
+    <h1>Produkt Kategorier</h1>
+    <div class="categoriesContainer">
+        <% for (const row of res) { %>
+            <a href= "">
+                <div class="categoryDiv">
+                    <p><%- row.namn %></p>
+                </div>
+            </a>
+        <% }; %>
+    </div>
+</section>
+
+<%- include("esentials/footer.ejs"); %>

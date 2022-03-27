@@ -1,0 +1,87 @@
+USE eshop;
+DELETE FROM kund;
+DELETE FROM produkt;
+DELETE FROM produktillkategori;
+DELETE FROM lager;
+DELETE FROM kategorisering;
+
+
+LOAD DATA LOCAL INFILE 'kund.csv'
+INTO TABLE kund
+CHARSET utf8
+FIELDS
+    TERMINATED BY ','
+    ENCLOSED BY '"'
+LINES
+    TERMINATED BY '\n'
+IGNORE 1 LINES
+;
+
+SELECT * FROM kund;
+
+LOAD DATA LOCAL INFILE "produkt.csv"
+INTO TABLE produkt
+CHARSET utf8
+FIELDS
+    TERMINATED BY ','
+    ENCLOSED BY '"'
+LINES
+    TERMINATED BY '\n'
+IGNORE 1 LINES
+;
+
+SELECT * FROM produkt;
+
+LOAD DATA LOCAL INFILE 'kategori.csv'
+INTO TABLE kategorisering
+CHARSET utf8
+FIELDS
+    TERMINATED BY ','
+    ENCLOSED BY '"'
+LINES
+    TERMINATED BY '\n'
+IGNORE 1 LINES
+;
+
+SELECT * FROM produkt;
+
+LOAD DATA LOCAL INFILE 'p2k.csv'
+INTO TABLE produktillkategori
+CHARSET utf8
+FIELDS
+    TERMINATED BY ','
+    ENCLOSED BY '"'
+LINES
+    TERMINATED BY '\n'
+IGNORE 1 LINES
+;
+
+-- SELECT * FROM Produktillkategori;
+
+-- LOAD DATA LOCAL INFILE 'Lagerregister.csv'
+-- INTO TABLE Lagerregister
+-- CHARSET utf8
+-- FIELDS
+--     TERMINATED BY ','
+--     ENCLOSED BY '"'
+-- LINES
+--     TERMINATED BY '\n'
+-- IGNORE 1 LINES
+-- ;
+
+-- SELECT * FROM Lagerregister;
+
+
+
+LOAD DATA LOCAL INFILE 'lager.csv'
+INTO TABLE lager
+CHARSET utf8
+FIELDS
+    TERMINATED BY ','
+    ENCLOSED BY '"'
+LINES
+    TERMINATED BY '\n'
+IGNORE 1 LINES
+;
+
+SELECT * FROM lager;

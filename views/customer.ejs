@@ -1,0 +1,30 @@
+<%- include("esentials/header.ejs"); %>
+<section class="customers">
+    <table class="customer-table">
+        <thead class="customer-title">
+            <tr>
+                <th>Kund-ID</th>
+                <th>Namn</th>
+                <th>Mail</th>
+                <th>Adress</th>
+                <th>Telefon</th>
+                <th></th>
+            </tr>
+        </thead>
+        <% for (const row of res) { %>
+        <tbody class="customer-info">
+            <tr>
+                <td><%- row.kundID %></td>
+                <td><%- row.fornamn %> <%- row.efternamn %></td>
+                <td><%- row.email %></td>
+                <td><%- row.fakturadress %></td>
+                <td><%- row.telefon %></td>
+                <td><a href="/eshop/customer/<%- row.kundID %>" class="customer-create-order">Skapa order</a></td>
+            </tr>
+        </tbody>
+        <% } %>
+      </table>
+</section>
+
+
+<%- include("esentials/footer.ejs"); %>

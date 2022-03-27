@@ -1,0 +1,9 @@
+produktid,namn,antal,beskrivning,bild_url,pris
+1,Banan,Gula turkiska bananer,images/banana.jpeg,5
+2,Gurka,Svenskgurka,images/cucumber.jpeg,10
+3,Fryspasta,Svensk pasta,images/fryspasta.jpeg,39
+4,Kycklingklubbor,Svensk kyckling,images/kycklingklubbor.jpeg,89
+5,Pesto,Pesto kräm,images/pesto.jpeg,39
+6,Ris,Vanligt ris,images/rice.jpeg,59
+7,Panpizza,Fryspizza,images/pinpizza.jpeg,25
+8,Tomater,Röda tomater,images/tomato.jpeg,5
