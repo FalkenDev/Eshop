@@ -1,5 +1,6 @@
 # Eshop
-Webbaserad E-shop klient med en terminalklient, som jobbar mot en databas.
+<p>Webbaserad E-shop klient med en terminalklient, som jobbar mot en databas.<p>
+  <br>
 Ett litet projekt som använder Express med kodspråk: SQL, CSV, EJS, JS och CSS.
 Databasen använder sig utav procedurer och triggers vid hämtning, uppdatering, skapande och ta bort data.
 E-shopen kan just nu:
