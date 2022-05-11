@@ -1,17 +1,19 @@
 # Eshop
 <p>Webbaserad E-shop klient med en terminalklient, som jobbar mot en databas.<p>
-  <br>
+<br>
 Ett litet projekt som använder Express med kodspråk: SQL, CSV, EJS, JS och CSS.
 Databasen använder sig utav procedurer och triggers vid hämtning, uppdatering, skapande och ta bort data.
+<br>
 E-shopen kan just nu:
-•	Visa vad för produkter som finns.
-•	Skapa, uppdatera och ta bort produkter.
-•	Visa alla kategorier och produkter som tillhör den kategorien.
-•	Visa vilka kunder som är registrerade.
-•	Skapa mat ordrar för kunden.
-•	Visa alla mat ordrar.
-•	Lägga till produkter i ordern.
-•	Beställa produkter / utföra ordern.
+<li>•	Visa vad för produkter som finns.</li>
+<li>•	Skapa, uppdatera och ta bort produkter.</li>
+<li>•	Visa alla kategorier och produkter som tillhör den kategorien.</li>
+<li>•	Visa vilka kunder som är registrerade.</li>
+<li>•	Skapa mat ordrar för kunden.</li>
+<li>•	Visa alla mat ordrar.</li>
+<li>•	Lägga till produkter i ordern.</li>
+<li>•	Beställa produkter / utföra ordern.</li>
+<br>
 Terminalklienten kan just nu:
 •	Visa meny
 •	Visa kreatörerna
