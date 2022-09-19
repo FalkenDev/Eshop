@@ -1,31 +1,31 @@
 # Eshop
-<p>Webbaserad E-shop klient med en terminalklient, som jobbar mot en databas.<p>
+<p>Web-based E-shop client with a terminal client, which works against a database.<p>
 <br>
-Ett litet projekt som använder Express med kodspråk: SQL, CSV, EJS, JS och CSS.
-Databasen använder sig utav procedurer och triggers vid hämtning, uppdatering, skapande och ta bort data.
+A small project using Express with coding languages: SQL, CSV, EJS, JS and CSS.
+The database uses procedures and triggers when retrieving, updating, creating and deleting data.
 <br>
-<h2>E-shopen kan just nu:</h2>
-<li>Visa vad för produkter som finns.</li>
-<li>Skapa, uppdatera och ta bort produkter.</li>
-<li>Visa alla kategorier och produkter som tillhör den kategorien.</li>
-<li>Visa vilka kunder som är registrerade.</li>
-<li>Skapa mat ordrar för kunden.</li>
-<li>Visa alla mat ordrar.</li>
-<li>Lägga till produkter i ordern.</li>
-<li>Beställa produkter / utföra ordern.</li>
+<h2>The e-shop can right now:</h2>
+<li>Show what products are available.</li>
+<li>Create, update and delete products.</li>
+<li>Show all categories and products belonging to that category.</li>
+<li>Show which customers are registered.</li>
+<li>Create food orders for the customer.</li>
+<li>Show all food orders.</li>
+<li>Add products to the order.</li>
+<li>Order products / execute the order.</li>
 <br>
-<h2>Terminalklienten kan just nu:</h2>
-<li>Visa meny.</li>
-<li>Visa kreatörerna.</li>
-<li>Visa senaste loggar.</li>
-<li>Visa alla produkter.</li>
-<li>Visa lagerhyllorna i lagret.</li>
-<li>Visa produkt med lager plats.</li>
-<li>Visa specificerad produkt med lager plats.</li>
-<li>Lägga till antal med produkter i lagret.</li>
-<li>Ta bort antal med produkter från lagret.</li>
-<li>Visa alla ordrar.</li>
-<li>Visa valda ordrar.</li>
-<li>Visa plocklistan för angiven order id.</li>
-<li>Skicka angiven order.</li>
-<li>Stänga av terminal sessionen.</li>
+<h2>The terminal client can currently:</h2>
+<li>Show menu.</li>
+<li>Show the creators.</li>
+<li>Show latest logs.</li>
+<li>Show all products.</li>
+<li>Show the warehouse shelves in the warehouse.</li>
+<li>Show product with stock location.</li>
+<li>Show specified product with stock location.</li>
+<li>Add quantity with products in stock.</li>
+<li>Remove quantity with products from the inventory.</li>
+<li>Show all orders.</li>
+<li>Show selected orders.</li>
+<li>Display the pick list for the specified order id.</li>
+<li>Send specified order.</li>
+<li>Close the terminal session.</li>
