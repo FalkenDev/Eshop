@@ -1,4 +1,5 @@
 # Eshop
+![alt text](https://github.com/FalkenDev/Yahtzee/blob/master/Eshop.png?raw=true)
 <p>Web-based E-shop client with a terminal client, which works against a database.<p>
 <br>
 A small project using Express with coding languages: SQL, CSV, EJS, JS and CSS.
